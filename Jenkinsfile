@@ -36,7 +36,7 @@ pipeline {
                 '''
 
                 sh '''
-                    cd javaapp-pipeline/target
+                    
                     if pgrep -f "java -jar java-sample-21-1.0.0.jar" > /dev/null; then
                         pkill -f "java -jar java-sample-21-1.0.0.jar"
                         echo "App was running and has been killed"
