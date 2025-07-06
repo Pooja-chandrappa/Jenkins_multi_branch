@@ -31,7 +31,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    cd javaapp-pipeline
+                   
                     mvn clean package -DskipTests
                 '''
 
